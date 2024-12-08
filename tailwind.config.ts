@@ -12,8 +12,14 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        
+        taviraj: ["Taviraj", "serif"],
+        epilogue: ["Epilogue", "sans-serif"], 
+      },
     },
   },
   plugins: [],
 };
+
 export default config;

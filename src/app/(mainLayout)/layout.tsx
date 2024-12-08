@@ -1,7 +1,7 @@
 import Navbar from "@/components/navbar/Navbar";
-import { ReactNode } from "react";
+import { IChildren } from "@/types";
 
-const mainLayout = ({ children }: { children: ReactNode }) => {
+const mainLayout = ({ children }: IChildren) => {
   return (
     <>
       <Navbar />
