@@ -32,9 +32,10 @@ const QuickPriceCheck = () => {
       <CommonHeading
         title="Quick Price Check
 "
+        position="center"
       />
 
-      <div className="flex justify-center gap-2">
+      <div className="flex justify-center gap-2 ">
         {quickPriceData.map((quickPriceItem: any) => (
           <div
             key={quickPriceItem.title}

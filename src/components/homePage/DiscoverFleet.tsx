@@ -2,35 +2,83 @@
 
 import { tabItems } from "@/constents/tabItems";
 import { useState } from "react";
+import { BiUser } from "react-icons/bi";
+import { FaLuggageCart } from "react-icons/fa";
+import { GoDotFill } from "react-icons/go";
+import CommonHeading from "../commonHeading/commonHeading";
 
 const DiscoverFleet = () => {
   const [activeTab, setActiveTab] = useState(0);
 
   return (
     <div className="w-full mx-auto">
+      <CommonHeading
+        title="Discover Our Fleet
+"
+        subTitle="Embark on a journey of luxury and sophistication as you discover our exquisite fleet of vehicles designed to redefine your travel experience. Each vehicle in our fleet is a testament to our commitment to elegance, comfort, and reliability. Here's a glimpse into the diverse offerings that await you.
+
+"
+      />
       {/* Tab Header */}
-      <div className="flex border-b border-gray-300">
+      <div className="flex border-gray-300">
         {tabItems.map((tab, index) => (
           <button
             key={index}
-            className={`py-2 px-4 text-lg font-semibold ${
+            className={`py-3 px-4 text-lg font-semibold transition-all duration-300 ease-in-out transform ${
               activeTab === index
-                ? "border-b-2 border-blue-500 text-blue-500"
-                : "text-gray-600 hover:text-blue-500"
+                ? "bg-[#da9100] text-white"
+                : "bg-[#ffd787] hover:bg-[#da9100] hover:text-white transition-all duration-300 ease-in-out transform"
             }`}
             onClick={() => setActiveTab(index)}
           >
-            <p className="text-sm"> {tab.label}</p>
+            <p className="text-sm">{tab.label}</p>
           </button>
         ))}
       </div>
 
       {/* Tab Content */}
-      <div>
+      <div className="p-5 bg-[#da9100] text-white transition-all duration-300 ease-in-out">
         <div></div>
-        <div>
+        <div className="space-y-5">
           <h2 className="text-3xl">{tabItems[activeTab].title}</h2>
           <p className="text-lg">{tabItems[activeTab].description}</p>
+
+          <div>
+            <div className="flex items-center gap-2 text-lg">
+              <BiUser size={25} />
+              <span className="font-semibold font-mulish">
+                Passenger Capacity:
+              </span>{" "}
+              {tabItems[activeTab].totalPassenger}
+            </div>
+            <div className="flex items-center gap-2 text-lg">
+              <FaLuggageCart size={25} />
+              <span className="font-semibold font-mulish">
+                Luggage Capacity:
+              </span>{" "}
+              {tabItems[activeTab].totalLuggage}
+            </div>
+          </div>
+
+          <div>
+            <h2 className="text-3xl">Features:</h2>
+            <ul>
+              <li></li>
+              {tabItems[activeTab].features.map((feature, i) => (
+                <li key={i} className="flex items-center gap-1">
+                  <GoDotFill size={10} />
+                  <span className="font-semibold font-mulish">
+                    {feature.title}:
+                  </span>
+                  {feature.description}
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <button className="bg-black px-6 py-3 text-md">
+            Book Now Pay Later
+          </button>
         </div>
       </div>
     </div>
