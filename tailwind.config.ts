@@ -13,9 +13,9 @@ const config: Config = {
         foreground: "var(--foreground)",
       },
       fontFamily: {
-        
         taviraj: ["Taviraj", "serif"],
-        epilogue: ["Epilogue", "sans-serif"], 
+        epilogue: ["Epilogue", "sans-serif"],
+        mulish: ["Mulish", "sans-serif"],
       },
     },
   },
