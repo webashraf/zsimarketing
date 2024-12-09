@@ -43,7 +43,9 @@ const QuickPriceCheck = () => {
           >
             <div>{quickPriceItem.icon}</div>
             <div className="">
-              <h4 className="text-[22px] font-taviraj mb-5">Hourly Rate</h4>
+              <h4 className="text-[22px] font-taviraj mb-5">
+                {quickPriceItem.title}
+              </h4>
               <h5 className="text-[20px] font-taviraj">Start from $60</h5>
             </div>
           </div>
