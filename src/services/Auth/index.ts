@@ -17,7 +17,6 @@ export const loginUser = async (userData: {
 
   if (data.status_code === 200 && data.isError == false) {
     cookies().set("token", data.data.token);
-    return data.data;
   }
-  return null;
+  return data;
 };

@@ -4,20 +4,28 @@
 import { setAccessToken } from "@/redux/features/authSlice";
 import { useAppDispatch, useAppSelector } from "@/redux/hooks";
 import { loginUser } from "@/services/Auth";
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 
 const LoginPage = () => {
   const [error, setError] = useState<string>("");
+  const [successMessage, setSuccessMessage] = useState<string>("");
+  const router = useRouter();
   const dispatch = useAppDispatch();
   const currentUserToken = useAppSelector((state) => state.auth);
 
-  const handleSubmit = async (e) => {
+  console.log("currentUserToken", currentUserToken);
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    const email = e.target.email.value;
-    const password = e.target.password.value;
+    const form = e.currentTarget;
+    const email = (form.elements.namedItem("email") as HTMLInputElement).value;
+    const password = (form.elements.namedItem("password") as HTMLInputElement)
+      .value;
 
     setError("");
+    setSuccessMessage("");
 
     console.log("Email:", email);
     console.log("Password:", password);
@@ -31,9 +39,14 @@ const LoginPage = () => {
       const res = await loginUser({ email, password });
 
       console.log("Logged in successfully:", res);
-      if (res) {
-        dispatch(setAccessToken(res.token));
-        console.log("currentUserToken", currentUserToken);
+      if (res.status_code === 200) {
+        dispatch(setAccessToken(res.data.token));
+        setSuccessMessage("Login successful! Redirecting...");
+        setTimeout(() => {
+          router.push("/");
+        }, 2000);
+      } else {
+        setError("Login failed email or password is wrong!");
       }
     } catch (error: any) {
       setError(error.message || "An error occurred. Please try again.");
@@ -46,6 +59,11 @@ const LoginPage = () => {
         <h2 className="text-2xl font-bold text-center mb-6">Login</h2>
         {error && (
           <p className="text-red-500 text-sm text-center mb-4">{error}</p>
+        )}
+        {successMessage && (
+          <p className="text-green-500 text-sm text-center mb-4">
+            {successMessage}
+          </p>
         )}
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
