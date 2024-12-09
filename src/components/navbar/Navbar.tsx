@@ -32,9 +32,12 @@ const Navbar = () => {
         <button className="border-2 border-black px-3 py-2 rounded-md font-semibold hover:bg-black hover:text-white transition-all duration-300">
           Book Now Pay Later
         </button>
-        <button className="border-2 border-black px-3 py-2 rounded-md font-semibold hover:bg-black hover:text-white transition-all duration-300">
+        <Link
+          href="/login"
+          className="border-2 border-black px-3 py-2 rounded-md font-semibold hover:bg-black hover:text-white transition-all duration-300"
+        >
           Account Login
-        </button>
+        </Link>
       </div>
     </div>
   );

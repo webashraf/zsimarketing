@@ -2,32 +2,26 @@ import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { RootState } from "../store";
 
 export interface AuthState {
-  value: number;
+  accessToken: string;
 }
 
 const initialState: AuthState = {
-  value: 0,
+  accessToken: "",
 };
 
 export const authSlice = createSlice({
   name: "auth",
   initialState,
   reducers: {
-    increment: (state) => {
-      state.value += 1;
-    },
-    decrement: (state) => {
-      state.value -= 1;
-    },
-
-    incrementByAmount: (state, action: PayloadAction<number>) => {
-      state.value += action.payload;
+    setAccessToken: (state, action: PayloadAction<string>) => {
+      console.log("auth slice", state.accessToken, action.payload);
+      state.accessToken = action.payload;
     },
   },
 });
 
-export const { increment, decrement, incrementByAmount } = authSlice.actions;
+export const { setAccessToken } = authSlice.actions;
 
-export const selectCount = (state: RootState) => state.auth.value;
+export const selectAccessToken = (state: RootState) => state.auth.accessToken;
 
 export default authSlice.reducer;
