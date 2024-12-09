@@ -1,4 +1,5 @@
 import DiscoverFleet from "@/components/homePage/DiscoverFleet";
+import ProfessionalChauffeurs from "@/components/homePage/ProfessionalChauffeurs";
 import QuickPriceCheck from "@/components/homePage/QuickPriceCheck";
 
 export default function Home() {
@@ -7,6 +8,8 @@ export default function Home() {
       <div className="max-w-[1320px] mx-auto ">
         <QuickPriceCheck />
         <DiscoverFleet />
+        {/* Uniq section */}
+        <ProfessionalChauffeurs />
       </div>
     </div>
   );

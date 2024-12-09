@@ -1,4 +1,4 @@
-import Navbar from "@/components/navbar/Navbar";
+import Navbar from "@/components/Shared/Navbar";
 import { IChildren } from "@/types";
 
 const mainLayout = ({ children }: IChildren) => {
