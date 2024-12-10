@@ -3,9 +3,9 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <footer className="bg-white border-t-4 border-t-[#da9100] text-black py-10 lg:px-0 px-5">
-      <div className="mx-auto flex flex-wrap gap-8 lg:max-w-[1480px]">
+      <div className="mx-auto flex lg:flex-nowrap flex-wrap gap-8 lg:max-w-[1440px]">
         {/* Column 1 */}
-        <div className="lg:w-[30%]">
+        <div className="lg:w-[30%] w-full">
           <h3 className="font-mono uppercase text-3xl">zsimarketing</h3>
           <p className="text-sm leading-relaxed">
             Spanning from the bustling energy of New York to over 300 cities
@@ -20,7 +20,7 @@ const Footer = () => {
         </div>
 
         {/* Column 2 */}
-        <div className="lg:w-[20%]">
+        <div className="lg:w-[20%] w-full">
           <h3 className="text-lg font-bold mb-4">QUICK LINKS</h3>
           <ul className="space-y-2 text-sm">
             <li>
@@ -52,7 +52,7 @@ const Footer = () => {
         </div>
 
         {/* Column 3 */}
-        <div className="lg:w-[20%]">
+        <div className="lg:w-[20%] w-full">
           <h3 className="text-lg font-bold mb-4">OUR SERVICES</h3>
           <ul className="space-y-2 text-sm">
             <li>
@@ -84,7 +84,7 @@ const Footer = () => {
         </div>
 
         {/* Column 4 */}
-        <div className="lg:w-[30%]">
+        <div className="lg:w-[30%] w-full">
           <h3 className="text-lg font-bold mb-4">Download Apps</h3>
           <div className="flex items-center gap-4 mb-4">
             <Image

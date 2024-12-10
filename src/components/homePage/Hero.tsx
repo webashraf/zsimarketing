@@ -1,5 +1,8 @@
 "use client";
 
+import Link from "next/link";
+import BookingForm from "../ui/BookingForm";
+
 const Hero = () => {
   return (
     <section
@@ -26,12 +29,13 @@ const Hero = () => {
           business, special occasions, or leisure, we provide a seamless and
           sophisticated journey tailored to your needs.
         </p>
-        <a
+        {/* <Link
           href="#services"
           className="px-6 py-3 bg-[#ca8600] hover:bg-[#b57a00] text-white font-bold rounded-md transition"
         >
           Book Your Ride
-        </a>
+        </Link> */}
+        <BookingForm />
       </div>
     </section>
   );

@@ -11,6 +11,8 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+          primary: '#ca8600',
+        
       },
       fontFamily: {
         taviraj: ["Taviraj", "serif"],

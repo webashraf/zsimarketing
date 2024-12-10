@@ -35,7 +35,7 @@ const QuickPriceCheck = () => {
         position="center"
       />
 
-      <div className="flex justify-center flex-wrap gap-2 ">
+      <div className="flex justify-center lg:flex-nowrap flex-wrap gap-2 ">
         {quickPriceData.map((quickPriceItem: any) => (
           <div
             key={quickPriceItem.title}
