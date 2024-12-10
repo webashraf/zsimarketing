@@ -5,9 +5,9 @@ export const tabItems = [
     description:
       "The Lincoln MKT Stretch Limousine offers an unparalleled experience in luxury travel. With its sleek design, plush leather seats, and state-of-the-art amenities, this limousine is perfect for those seeking comfort and style. Whether you're attending a special event, a corporate meeting, or simply want to enjoy a night out in luxury, this vehicle will exceed your expectations with its spacious interior and high-end features.",
     images: [
-      "/images/lincoln-mkt-1.jpg",
-      "/images/lincoln-mkt-2.jpg",
-      "/images/lincoln-mkt-3.jpg",
+      "https://rpclimo.com/wp-content/uploads/2023/12/2-1024x571.png",
+      "https://rpclimo.com/wp-content/uploads/2023/12/1-1024x571.png",
+      "https://rpclimo.com/wp-content/uploads/2023/12/2-1024x571.png",
     ],
     totalPassenger: "10",
     totalLuggage: "8",
@@ -45,9 +45,9 @@ export const tabItems = [
     description:
       "The Mercedes-Benz Sprinter Crew Van 2500 is the perfect blend of style, versatility, and practicality. Ideal for both personal and professional use, this van offers plenty of space and comfort for a large group of passengers. It is equipped with top-tier features that ensure both convenience and safety. Whether for business trips, airport transfers, or road trips, the Sprinter Crew Van will meet your needs while providing a smooth and comfortable ride.",
     images: [
-      "/images/mercedes-sprinter-1.jpg",
-      "/images/mercedes-sprinter-2.jpg",
-      "/images/mercedes-sprinter-3.jpg",
+      "https://rpclimo.com/wp-content/uploads/2023/12/2-1-1024x750.jpg",
+      "https://rpclimo.com/wp-content/uploads/2023/12/1-1-1024x750.jpg",
+      "https://rpclimo.com/wp-content/uploads/2023/12/2-1-1024x750.jpg",
     ],
     totalPassenger: "12",
     totalLuggage: "6",
@@ -85,9 +85,9 @@ export const tabItems = [
     description:
       "The Lincoln Navigator is a full-size luxury SUV that embodies power, elegance, and comfort. Whether you're embarking on a road trip or attending a special event, this vehicle delivers a smooth and comfortable ride. Its expansive interior provides generous space for both passengers and luggage, making it the ideal choice for families, groups, or anyone looking for an exceptional driving experience. Equipped with top-tier technology, the Lincoln Navigator ensures a safe, comfortable, and enjoyable journey every time.",
     images: [
-      "/images/lincoln-navigator-1.jpg",
-      "/images/lincoln-navigator-2.jpg",
-      "/images/lincoln-navigator-3.jpg",
+      "	https://rpclimo.com/wp-content/uploads/2023/12/2-2.jpg",
+      "	https://rpclimo.com/wp-content/uploads/2023/12/2-2.jpg",
+      "	https://rpclimo.com/wp-content/uploads/2023/12/2-2.jpg",
     ],
     totalPassenger: "7",
     totalLuggage: "5",
@@ -125,9 +125,9 @@ export const tabItems = [
     description:
       "The Cadillac Escalade is the epitome of luxury and style in the SUV market. Combining rugged durability with exceptional comfort, this vehicle is ideal for those who seek both performance and elegance. Whether for a family trip or a business outing, the Escalade ensures a safe and comfortable ride. Its sleek design, advanced features, and spacious interior make it one of the best choices for a premium SUV experience.",
     images: [
-      "/images/cadillac-escalade-1.jpg",
-      "/images/cadillac-escalade-2.jpg",
-      "/images/cadillac-escalade-3.jpg",
+      "https://rpclimo.com/wp-content/uploads/2023/12/4-1.jpg",
+      "https://rpclimo.com/wp-content/uploads/2023/12/5-1.jpg",
+      "https://rpclimo.com/wp-content/uploads/2023/12/4-1.jpg",
     ],
     totalPassenger: "7",
     totalLuggage: "6",
@@ -165,9 +165,9 @@ export const tabItems = [
     description:
       "The Mercedes Benz S580 is a luxury sedan that combines cutting-edge technology, refined comfort, and powerful performance. Designed to cater to the most discerning of clients, this vehicle offers a serene driving experience, with a quiet cabin, plush seating, and a smooth ride. Whether you're attending a business meeting or enjoying a weekend getaway, the S580 ensures that every journey is memorable and luxurious.",
     images: [
-      "/images/mercedes-s580-1.jpg",
-      "/images/mercedes-s580-2.jpg",
-      "/images/mercedes-s580-3.jpg",
+      "https://rpclimo.com/wp-content/uploads/2023/12/7-1.jpg",
+      "https://rpclimo.com/wp-content/uploads/2023/12/6-1.jpg",
+      "https://rpclimo.com/wp-content/uploads/2023/12/7-1.jpg",
     ],
     totalPassenger: "5",
     totalLuggage: "4",
