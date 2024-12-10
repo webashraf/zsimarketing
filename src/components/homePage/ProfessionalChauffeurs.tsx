@@ -47,8 +47,10 @@ const ProfessionalChauffeurs = () => {
             />
             <div className="-translate-y-3">
               <AnimatedCard>
-                <h3 className="text-3xl">{driver.name}</h3>
-                <h4 className="font-light text-center">{driver.position}</h4>
+                <h3 className="text-2xl font-mulish">{driver.name}</h3>
+                <h4 className="font-light text-center font-mulish">
+                  {driver.position}
+                </h4>
               </AnimatedCard>
             </div>
           </div>

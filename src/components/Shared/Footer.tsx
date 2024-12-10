@@ -1,12 +1,9 @@
+import Image from "next/image";
+
 const Footer = () => {
   return (
-    <footer
-      className="relative bg-cover bg-center bg-no-repeat"
-      style={{
-        backgroundImage: `url('https://rpclimo.com/wp-content/uploads/2023/12/5-1.jpg')`,
-      }}
-    >
-      <div className="bg-white bg-opacity-80 backdrop-blur-md border-t-4 border-t-[#da9100] text-black py-10">
+    <>
+      <footer className="bg-white border-t-4 border-t-[#da9100] text-black py-10">
         <div className="mx-auto flex gap-8 max-w-[1480px]">
           {/* Column 1 */}
           <div className="w-[30%]">
@@ -91,15 +88,19 @@ const Footer = () => {
           <div className="w-[30%]">
             <h3 className="text-lg font-bold mb-4">Download Apps</h3>
             <div className="flex items-center gap-4 mb-4">
-              <img
-                src="/images/appstore.png"
+              <Image
+                height={50}
+                width={150}
+                src="https://i.ibb.co/pdn8JCD/download.png"
                 alt="App Store"
-                className="w-32 h-auto"
+                className=" h-auto"
               />
-              <img
-                src="/images/googleplay.png"
+              <Image
+                height={50}
+                width={165}
+                src="https://i.ibb.co/0BXDXD0/get-it-on-google-play-badge.png"
                 alt="Google Play"
-                className="w-32 h-auto"
+                className=" h-auto"
               />
             </div>
             <p className="text-sm mb-2">
@@ -128,8 +129,8 @@ const Footer = () => {
             </a>
           </div>
         </div>
-      </div>
-    </footer>
+      </footer>
+    </>
   );
 };
 
