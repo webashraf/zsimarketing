@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className="min-h-screen pb-10">
       <Hero />
-      <div className="max-w-[1320px] mx-auto ">
+      <div className="lg:max-w-[1320px] overflow-x-hidden w-full mx-auto ">
         <QuickPriceCheck />
         <DiscoverFleet />
         {/* Uniq section */}

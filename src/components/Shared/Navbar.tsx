@@ -4,7 +4,7 @@ import { FaPhoneAlt } from "react-icons/fa";
 
 const Navbar = () => {
   return (
-    <div className="bg-slate-200">
+    <div className="bg-slate-200 lg:block hidden">
       <div className="uppercase w-full  flex justify-between py-4 items-center px-5 max-w-[1480px] mx-auto">
         <Link href="/" className="font-mono uppercase text-2xl">
           zsimarketing

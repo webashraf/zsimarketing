@@ -28,14 +28,14 @@ const QuickPriceCheck = () => {
   ];
 
   return (
-    <div className="mb-10">
+    <div className="mb-10 lg:px-0 px-5">
       <CommonHeading
         title="Quick Price Check
 "
         position="center"
       />
 
-      <div className="flex justify-center gap-2 ">
+      <div className="flex justify-center flex-wrap gap-2 ">
         {quickPriceData.map((quickPriceItem: any) => (
           <div
             key={quickPriceItem.title}
@@ -52,13 +52,13 @@ const QuickPriceCheck = () => {
         ))}
       </div>
 
-      <h2 className="font-Epilogue text-[80px] text-center mt-12">
+      <h2 className="font-Epilogue lg:text-[80px] text-5xl text-center mt-12">
         RPC LIMO NATIONWIDE
       </h2>
       <h5 className="text-[35px] font-mulish text-center mt-12">
         Headquarters in New York serving multiple cities.
       </h5>
-      <div className="flex gap-3 items-center justify-center mt-12">
+      <div className="flex gap-3 flex-wrap items-center justify-center mt-12">
         <button className="bg-[#da9100] font-mulish px-4 py-2 text-[20px] text-white hover:bg-black hover:text-white transition-all duration-300">
           View Price & Book A Ride
         </button>

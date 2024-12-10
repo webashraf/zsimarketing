@@ -30,13 +30,13 @@ const ProfessionalChauffeurs = () => {
     },
   ];
   return (
-    <div>
+    <div className="lg:px-0 px-5">
       <CommonHeading
         title="Our Professional Chauffeurs
 "
         subTitle="Our team of professional chauffeurs stands as the cornerstone of our commitment to excellence in transportation. Handpicked for their expertise, dedication, and unwavering professionalism, our chauffeurs are more than drivers—they are ambassadors of luxury, ensuring that your journey is not just a commute but an experience to remember."
       />
-      <div className="grid grid-cols-4 gap-5">
+      <div className="grid lg:grid-cols-4 grid-cols-1 gap-5">
         {driverInfo.map((driver) => (
           <div key={driver.id + driver.name}>
             <Image
@@ -47,7 +47,7 @@ const ProfessionalChauffeurs = () => {
             />
             <div className="-translate-y-3">
               <AnimatedCard>
-                <h3 className="text-2xl font-mulish">{driver.name}</h3>
+                <h3 className="lg:text-2xl text-xl font-mulish">{driver.name}</h3>
                 <h4 className="font-light text-center font-mulish">
                   {driver.position}
                 </h4>

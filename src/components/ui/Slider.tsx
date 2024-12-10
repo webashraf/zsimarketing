@@ -16,21 +16,21 @@ const Slider = ({ carImages }: { carImages: string[] }) => {
   }, [carImages?.length]);
 
   return (
-    <div className="relative w-[600px] max-w-3xl  overflow-hidden">
+    <div className="relative lg:w-[600px] w-full max-w-3xl  overflow-hidden ">
       <div
-        className="w-[600px] h-[300px] flex transition-transform duration-[1500ms] ease-in-out"
+        className="lg:w-[600px] lg:h-[300px] flex transition-transform duration-[1500ms] ease-in-out"
         style={{
-          transform: `translateX(-${currentIndex * 600}px)`, // Adjust to move images horizontally
+          transform: `translateX(-${currentIndex * 100}%)`,
         }}
       >
         {carImages?.map((image, index) => (
-          <div key={index} className="flex-shrink-0 w-[600px] h-[300px]">
+          <div key={index} className="flex-shrink-0 w-[100%] lg:h-[300px]">
             <Image
               src={image}
-              width={600} // Set width to 600px for each image
-              height={400} // Set height to 300px for each image
+              width={600}
+              height={400}
               alt={`Slide ${index}`}
-              className="object-cover w-full" // Ensure images cover the area correctly
+              className="object-cover w-full"
             />
           </div>
         ))}
