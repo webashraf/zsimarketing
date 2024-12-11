@@ -11,13 +11,19 @@ const OffCanvasMenu = () => {
 
   return (
     <div className="lg:hidden block">
-      {/* Button to toggle menu */}
-      <button
-        onClick={() => setIsOpen(!isOpen)}
-        className="fixed top-4 right-4 z-50 text-slate-900 p-3 rounded-md shadow-lg focus:outline-none bg-slate-50"
-      >
-        <VscMenu size={20} />
-      </button>
+      <div className="flex items-center justify-between p-5 fixed w-full top-0 z-50 bg-white">
+        <Link href="/" className="font-mono uppercase text-2xl">
+          zsimarketing
+        </Link>
+        {/* Button to toggle menu */}
+
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          className="  text-slate-900 p-3 rounded-md shadow-lg focus:outline-none bg-slate-50"
+        >
+          <VscMenu size={20} />
+        </button>
+      </div>
 
       {/* Overlay */}
       <div

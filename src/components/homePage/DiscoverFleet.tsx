@@ -67,13 +67,14 @@ const DiscoverFleet = () => {
                   {/* <GoDotFill size={10} /> */}
                   <strong className="inline-block text-nowrap ">
                     {feature.title}
-                  </strong>: {feature.description}
+                  </strong>
+                  : {feature.description}
                 </p>
               ))}
             </div>
           </div>
 
-          <button className="bg-black px-6 py-3 text-md">
+          <button className="bg-black hover:bg-white hover:text-black px-6 py-3 text-md">
             Book Now Pay Later
           </button>
         </div>

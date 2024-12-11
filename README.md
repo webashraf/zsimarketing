@@ -8,13 +8,16 @@ ZSI Marketing is a modern web application designed to provide users with a seaml
 - **Quick Price Check Section**: A user-friendly section to instantly calculate and view pricing details.
 - **Discover Our Fleet Section**: Showcase a variety of vehicles available for booking with detailed descriptions and images.
 - **Our Professional Chauffeurs Section**: Highlight the team of professional chauffeurs to build trust and reliability.
+- **Responsive Design**: Ensures optimal user experience across all devices, including desktops, tablets, and smartphones.
+- **User Token Management**: Uses Redux to securely store and manage user tokens for authentication and session handling.
+- **Login Form Validation and Error Handling**: Implements robust validation to ensure proper input handling and displays clear error messages for invalid form submissions.
 
 ## Technologies Used
 
 ### Framework & Tools:
 
 - **Next.js** for building a robust, server-rendered application.
-- **Redux** for state management to handle complex data flows.
+- **Redux** for state management to handle complex data flows and securely store user tokens.
 - **Tailwind CSS** for crafting a responsive and modern user interface.
 
 [Live Link](https://zsimarketing.vercel.app)
@@ -76,10 +79,6 @@ If you'd like to contribute to ZSI Marketing, follow these steps:
    ```
 5. Open a pull request.
 
-## License
-
-This project is open-source and available under the [MIT License](LICENSE).
-
 ## Contact
 
 For questions or support, feel free to contact [Ali Ashraf](mailto:aliashraftamim@gmail.com).
@@ -87,3 +86,4 @@ For questions or support, feel free to contact [Ali Ashraf](mailto:aliashraftami
 ---
 
 Thank you for exploring ZSI Marketing! 🚗✨
+
