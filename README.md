@@ -9,7 +9,7 @@ ZSI Marketing is a modern web application designed to provide users with a seaml
 - **Discover Our Fleet Section**: Showcase a variety of vehicles available for booking with detailed descriptions and images.
 - **Our Professional Chauffeurs Section**: Highlight the team of professional chauffeurs to build trust and reliability.
 - **Responsive Design**: Ensures optimal user experience across all devices, including desktops, tablets, and smartphones.
-- **User Token Management**: Uses Redux to securely store and manage user tokens for authentication and session handling.
+- **User Token Management**: Uses Redux Persist to securely store and manage user tokens for authentication and session handling.
 - **Login Form Validation and Error Handling**: Implements robust validation to ensure proper input handling and displays clear error messages for invalid form submissions.
 
 ## Technologies Used
