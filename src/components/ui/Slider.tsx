@@ -18,7 +18,7 @@ const Slider = ({ carImages }: { carImages: string[] }) => {
   return (
     <div className="relative lg:w-[600px] w-full max-w-3xl  overflow-hidden ">
       <div
-        className="lg:w-[600px] lg:h-[300px] flex transition-transform duration-[1500ms] ease-in-out"
+        className="lg:w-[600px] lg:h-[320px] flex transition-transform duration-[1500ms] ease-in-out"
         style={{
           transform: `translateX(-${currentIndex * 100}%)`,
         }}
